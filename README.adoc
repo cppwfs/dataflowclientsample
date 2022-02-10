@@ -1,0 +1,17 @@
+= Sample Data Flow Client
+Purpose of this sample is to verify comma delimited values in properties for Data Flow Client
+
+== Build the project
+
+=== To build the demo project
+
+```bash
+./mvnw clean package -DskipTests
+```
+
+=== To execute the demo project
+
+```bash
+export spring_cloud_dataflow_client_serverUri=<url to SCDF>
+java -jar target/dataflowclient-0.0.1-SNAPSHOT.jar <task definition name>
+```
